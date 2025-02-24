@@ -1,0 +1,536 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\LOAN\Downloads\Econometrics\Final\Group 1\Group 1.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}25 Dec 2024, 00:36:00
+
+{com}. use "C:\Users\LOAN\Downloads\Econometrics\Final\Group 1\project1.dta"
+
+. reg income province gender age married edu ethnicity hhsize dep_ratio urban log_aland log_pland log_fland log_gland
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(13, 7403)     = {res}   223.21
+{txt}       Model {c |} {res} 1.5075e+10        13  1.1596e+09   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3.8459e+10     7,403  5195002.42   {txt}R-squared       ={res}    0.2816
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2803
+{txt}       Total {c |} {res} 5.3533e+10     7,416   7218599.9   {txt}Root MSE        =   {res} 2279.3
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}      income{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}province {c |}{col 14}{res}{space 2}-14.18486{col 26}{space 2} 4.235259{col 37}{space 1}   -3.35{col 46}{space 3}0.001{col 54}{space 4}-22.48718{col 67}{space 3}-5.882551
+{txt}{space 6}gender {c |}{col 14}{res}{space 2}-122.6192{col 26}{space 2} 88.27503{col 37}{space 1}   -1.39{col 46}{space 3}0.165{col 54}{space 4}-295.6634{col 67}{space 3} 50.42495
+{txt}{space 9}age {c |}{col 14}{res}{space 2} 14.26567{col 26}{space 2} 2.232237{col 37}{space 1}    6.39{col 46}{space 3}0.000{col 54}{space 4}  9.88985{col 67}{space 3} 18.64149
+{txt}{space 5}married {c |}{col 14}{res}{space 2} 305.7927{col 26}{space 2} 99.80716{col 37}{space 1}    3.06{col 46}{space 3}0.002{col 54}{space 4} 110.1422{col 67}{space 3} 501.4431
+{txt}{space 9}edu {c |}{col 14}{res}{space 2} 151.2094{col 26}{space 2} 7.737031{col 37}{space 1}   19.54{col 46}{space 3}0.000{col 54}{space 4} 136.0426{col 67}{space 3} 166.3762
+{txt}{space 3}ethnicity {c |}{col 14}{res}{space 2} 977.0331{col 26}{space 2} 68.01238{col 37}{space 1}   14.37{col 46}{space 3}0.000{col 54}{space 4} 843.7095{col 67}{space 3} 1110.357
+{txt}{space 6}hhsize {c |}{col 14}{res}{space 2}-163.4649{col 26}{space 2} 18.56086{col 37}{space 1}   -8.81{col 46}{space 3}0.000{col 54}{space 4}-199.8495{col 67}{space 3}-127.0803
+{txt}{space 3}dep_ratio {c |}{col 14}{res}{space 2}-1674.061{col 26}{space 2} 100.0454{col 37}{space 1}  -16.73{col 46}{space 3}0.000{col 54}{space 4}-1870.178{col 67}{space 3}-1477.944
+{txt}{space 7}urban {c |}{col 14}{res}{space 2} 627.9007{col 26}{space 2} 81.94616{col 37}{space 1}    7.66{col 46}{space 3}0.000{col 54}{space 4} 467.2629{col 67}{space 3} 788.5385
+{txt}{space 3}log_aland {c |}{col 14}{res}{space 2}-95.05942{col 26}{space 2} 10.67954{col 37}{space 1}   -8.90{col 46}{space 3}0.000{col 54}{space 4}-115.9944{col 67}{space 3}-74.12448
+{txt}{space 3}log_pland {c |}{col 14}{res}{space 2}-4.143512{col 26}{space 2} 8.762985{col 37}{space 1}   -0.47{col 46}{space 3}0.636{col 54}{space 4}-21.32146{col 67}{space 3} 13.03443
+{txt}{space 3}log_fland {c |}{col 14}{res}{space 2}-1.306673{col 26}{space 2} 7.097936{col 37}{space 1}   -0.18{col 46}{space 3}0.854{col 54}{space 4}-15.22065{col 67}{space 3}  12.6073
+{txt}{space 3}log_gland {c |}{col 14}{res}{space 2}-11.94474{col 26}{space 2} 10.71368{col 37}{space 1}   -1.11{col 46}{space 3}0.265{col 54}{space 4} -32.9466{col 67}{space 3} 9.057116
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 2040.264{col 26}{space 2} 187.7571{col 37}{space 1}   10.87{col 46}{space 3}0.000{col 54}{space 4} 1672.206{col 67}{space 3} 2408.321
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. vif
+
+{txt}    Variable {c |}       VIF       1/VIF  
+{hline 13}{c +}{hline 22}
+{space 3}log_aland {c |} {res}     2.08    0.481178
+{txt}{space 5}married {c |} {res}     1.82    0.550475
+{txt}{space 6}gender {c |} {res}     1.81    0.551919
+{txt}{space 7}urban {c |} {res}     1.70    0.589175
+{txt}{space 3}ethnicity {c |} {res}     1.65    0.607807
+{txt}{space 9}edu {c |} {res}     1.30    0.766551
+{txt}{space 4}province {c |} {res}     1.28    0.781632
+{txt}{space 3}log_gland {c |} {res}     1.26    0.795045
+{txt}{space 3}log_fland {c |} {res}     1.24    0.803808
+{txt}{space 9}age {c |} {res}     1.22    0.816677
+{txt}{space 6}hhsize {c |} {res}     1.22    0.822169
+{txt}{space 3}dep_ratio {c |} {res}     1.09    0.914536
+{txt}{space 3}log_pland {c |} {res}     1.05    0.950713
+{txt}{hline 13}{c +}{hline 22}
+    Mean VIF {c |} {res}     1.44
+
+{com}. ovtest
+
+{txt}Ramsey RESET test for omitted variables
+Omitted: Powers of fitted values of {res:income}
+
+H0: Model has no omitted variables
+
+{ralign 10:F({res:3}, {res:7400})} = {res}{ralign 6:53.60}
+{txt}{ralign 10:Prob > F} = {res}{ralign 6:0.0000}
+
+{com}. estat hettest
+
+{txt}Breusch–Pagan/Cook–Weisberg test for heteroskedasticity 
+Assumption: Normal error terms
+{p 0 11 0}Variable:{space 1}{res:{txt:Fitted values of} {res:income}}{p_end}
+
+H0: Constant variance
+
+{ralign 11:chi2({res:1})} = {res}{ralign 7:3251.23}
+{txt}{ralign 11:Prob > chi2} = {res}{ralign 7:0.0000}
+
+{com}. gen log_income = ln(income+1)
+
+. reg log_income province gender age married edu ethnicity hhsize dep_ratio urban log_aland log_pland log_fland log_gland
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(13, 7403)     = {res}   489.56
+{txt}       Model {c |} {res} 2075.70991        13  159.669993   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2414.48378     7,403  .326149369   {txt}R-squared       ={res}    0.4623
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.4613
+{txt}       Total {c |} {res} 4490.19368     7,416  .605473798   {txt}Root MSE        =   {res} .57109
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  log_income{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}province {c |}{col 14}{res}{space 2} .0040569{col 26}{space 2} .0010612{col 37}{space 1}    3.82{col 46}{space 3}0.000{col 54}{space 4} .0019767{col 67}{space 3} .0061371
+{txt}{space 6}gender {c |}{col 14}{res}{space 2}-.0254533{col 26}{space 2} .0221184{col 37}{space 1}   -1.15{col 46}{space 3}0.250{col 54}{space 4}-.0688116{col 67}{space 3}  .017905
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .0067345{col 26}{space 2} .0005593{col 37}{space 1}   12.04{col 46}{space 3}0.000{col 54}{space 4} .0056381{col 67}{space 3} .0078309
+{txt}{space 5}married {c |}{col 14}{res}{space 2} .0659726{col 26}{space 2} .0250079{col 37}{space 1}    2.64{col 46}{space 3}0.008{col 54}{space 4}   .01695{col 67}{space 3} .1149952
+{txt}{space 9}edu {c |}{col 14}{res}{space 2} .0561575{col 26}{space 2} .0019386{col 37}{space 1}   28.97{col 46}{space 3}0.000{col 54}{space 4} .0523573{col 67}{space 3} .0599577
+{txt}{space 3}ethnicity {c |}{col 14}{res}{space 2}  .361966{col 26}{space 2} .0170413{col 37}{space 1}   21.24{col 46}{space 3}0.000{col 54}{space 4} .3285602{col 67}{space 3} .3953718
+{txt}{space 6}hhsize {c |}{col 14}{res}{space 2}-.0592282{col 26}{space 2} .0046506{col 37}{space 1}  -12.74{col 46}{space 3}0.000{col 54}{space 4}-.0683448{col 67}{space 3}-.0501116
+{txt}{space 3}dep_ratio {c |}{col 14}{res}{space 2}-.5616252{col 26}{space 2} .0250676{col 37}{space 1}  -22.40{col 46}{space 3}0.000{col 54}{space 4}-.6107648{col 67}{space 3}-.5124856
+{txt}{space 7}urban {c |}{col 14}{res}{space 2} .2416663{col 26}{space 2} .0205326{col 37}{space 1}   11.77{col 46}{space 3}0.000{col 54}{space 4} .2014165{col 67}{space 3}  .281916
+{txt}{space 3}log_aland {c |}{col 14}{res}{space 2}-.0342871{col 26}{space 2} .0026759{col 37}{space 1}  -12.81{col 46}{space 3}0.000{col 54}{space 4}-.0395326{col 67}{space 3}-.0290416
+{txt}{space 3}log_pland {c |}{col 14}{res}{space 2} .0021598{col 26}{space 2} .0021957{col 37}{space 1}    0.98{col 46}{space 3}0.325{col 54}{space 4}-.0021443{col 67}{space 3}  .006464
+{txt}{space 3}log_fland {c |}{col 14}{res}{space 2} .0030165{col 26}{space 2} .0017785{col 37}{space 1}    1.70{col 46}{space 3}0.090{col 54}{space 4}-.0004698{col 67}{space 3} .0065028
+{txt}{space 3}log_gland {c |}{col 14}{res}{space 2} .0011293{col 26}{space 2} .0026844{col 37}{space 1}    0.42{col 46}{space 3}0.674{col 54}{space 4} -.004133{col 67}{space 3} .0063915
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 7.101819{col 26}{space 2} .0470448{col 37}{space 1}  150.96{col 46}{space 3}0.000{col 54}{space 4} 7.009598{col 67}{space 3}  7.19404
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. estat hettest
+
+{txt}Breusch–Pagan/Cook–Weisberg test for heteroskedasticity 
+Assumption: Normal error terms
+{p 0 11 0}Variable:{space 1}{res:{txt:Fitted values of} {res:log_income}}{p_end}
+
+H0: Constant variance
+
+{ralign 11:chi2({res:1})} = {res}{ralign 6:0.51}
+{txt}{ralign 11:Prob > chi2} = {res}{ralign 6:0.4758}
+
+{com}. sum
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}province {c |}{res}      7,417     14.8676    7.068493          2         25
+{txt}{space 6}gender {c |}{res}      7,417    .7952002    .4035824          0          1
+{txt}{space 9}age {c |}{res}      7,417    48.40326    13.12027         18         99
+{txt}{space 5}married {c |}{res}      7,417    .8496697     .357419          0          1
+{txt}{space 9}edu {c |}{res}      7,417    8.722529    3.907178          0         22
+{txt}{hline 13}{c +}{hline 57}
+{space 3}ethnicity {c |}{res}      7,417    .4704058    .4991571          0          1
+{txt}{space 6}hhsize {c |}{res}      7,417    3.937711     1.57264          1         15
+{txt}{space 6}income {c |}{res}      7,417    2759.546    2686.745   129.5833   73086.46
+{txt}{space 3}dep_ratio {c |}{res}      7,417    .3684073    .2766372          0          1
+{txt}{space 7}urban {c |}{res}      7,417    .2298773    .4207821          0          1
+{txt}{hline 13}{c +}{hline 57}
+{space 3}log_aland {c |}{res}      7,417    5.670269    3.572751          0   12.06682
+{txt}{space 3}log_pland {c |}{res}      7,417    1.643519    3.097642          0   11.69526
+{txt}{space 3}log_fland {c |}{res}      7,417    2.698598    4.159105          0   12.84793
+{txt}{space 3}log_gland {c |}{res}      7,417    2.993104    2.770599          0   10.46313
+{txt}{space 2}log_income {c |}{res}      7,417    7.620103     .778122   4.872012   11.19941
+
+{com}. ksmirnov income=normal((income- 2759.546)/ 2686.745)
+
+{txt}One-sample Kolmogorov–Smirnov test against theoretical distribution
+  normal((income- 2759.546)/ 2686.745)
+
+Smaller group             D     p-value  
+{hline 39}
+income             {res}  0.1327       0.000
+{txt}Cumulative         {res} -0.1789       0.000
+{txt}Combined K-S       {res}  0.1789       0.000
+
+{txt}Note: Ties exist in dataset; 
+      there are 7166 unique values out of 7417 observations.
+
+{com}. predict resid, residuals
+
+. qnorm resid
+{res}
+{com}. graph save "Graph" "C:\Users\LOAN\Downloads\Econometrics\Final\Group 1\Q-Q plot.gph"
+{res}{txt}file {bf:C:\Users\LOAN\Downloads\Econometrics\Final\Group 1\Q-Q plot.gph} saved
+
+{com}. reg log_income ethnicity##urban province gender age married edu hhsize dep_ratio log_aland log_pland log_fland log_gland
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(14, 7402)     = {res}   467.80
+{txt}       Model {c |} {res} 2107.85027        14  150.560734   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2382.34341     7,402  .321851312   {txt}R-squared       ={res}    0.4694
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.4684
+{txt}       Total {c |} {res} 4490.19368     7,416  .605473798   {txt}Root MSE        =   {res} .56732
+
+{txt}{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}     log_income{col 17}{c |} Coefficient{col 29}  Std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
+{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}1.ethnicity {c |}{col 17}{res}{space 2} .4343314{col 29}{space 2} .0184125{col 40}{space 1}   23.59{col 49}{space 3}0.000{col 57}{space 4} .3982377{col 70}{space 3} .4704252
+{txt}{space 8}1.urban {c |}{col 17}{res}{space 2} .4617034{col 29}{space 2} .0300145{col 40}{space 1}   15.38{col 49}{space 3}0.000{col 57}{space 4} .4028665{col 70}{space 3} .5205404
+{txt}{space 15} {c |}
+ethnicity#urban {c |}
+{space 11}1 1  {c |}{col 17}{res}{space 2}-.3454039{col 29}{space 2} .0345644{col 40}{space 1}   -9.99{col 49}{space 3}0.000{col 57}{space 4}  -.41316{col 70}{space 3}-.2776478
+{txt}{space 15} {c |}
+{space 7}province {c |}{col 17}{res}{space 2} .0037514{col 29}{space 2} .0010546{col 40}{space 1}    3.56{col 49}{space 3}0.000{col 57}{space 4} .0016841{col 70}{space 3} .0058188
+{txt}{space 9}gender {c |}{col 17}{res}{space 2}-.0289449{col 29}{space 2} .0219749{col 40}{space 1}   -1.32{col 49}{space 3}0.188{col 57}{space 4}-.0720221{col 70}{space 3} .0141322
+{txt}{space 12}age {c |}{col 17}{res}{space 2} .0063978{col 29}{space 2} .0005566{col 40}{space 1}   11.49{col 49}{space 3}0.000{col 57}{space 4} .0053067{col 70}{space 3}  .007489
+{txt}{space 8}married {c |}{col 17}{res}{space 2} .0729286{col 29}{space 2} .0248523{col 40}{space 1}    2.93{col 49}{space 3}0.003{col 57}{space 4}  .024211{col 70}{space 3} .1216463
+{txt}{space 12}edu {c |}{col 17}{res}{space 2} .0551014{col 29}{space 2} .0019287{col 40}{space 1}   28.57{col 49}{space 3}0.000{col 57}{space 4} .0513206{col 70}{space 3} .0588822
+{txt}{space 9}hhsize {c |}{col 17}{res}{space 2}-.0569035{col 29}{space 2} .0046258{col 40}{space 1}  -12.30{col 49}{space 3}0.000{col 57}{space 4}-.0659713{col 70}{space 3}-.0478357
+{txt}{space 6}dep_ratio {c |}{col 17}{res}{space 2}-.5580936{col 29}{space 2} .0249044{col 40}{space 1}  -22.41{col 49}{space 3}0.000{col 57}{space 4}-.6069133{col 70}{space 3}-.5092739
+{txt}{space 6}log_aland {c |}{col 17}{res}{space 2}-.0364805{col 29}{space 2} .0026672{col 40}{space 1}  -13.68{col 49}{space 3}0.000{col 57}{space 4} -.041709{col 70}{space 3}-.0312519
+{txt}{space 6}log_pland {c |}{col 17}{res}{space 2} .0016983{col 29}{space 2} .0021816{col 40}{space 1}    0.78{col 49}{space 3}0.436{col 57}{space 4}-.0025783{col 70}{space 3}  .005975
+{txt}{space 6}log_fland {c |}{col 17}{res}{space 2} .0039888{col 29}{space 2} .0017694{col 40}{space 1}    2.25{col 49}{space 3}0.024{col 57}{space 4} .0005203{col 70}{space 3} .0074573
+{txt}{space 6}log_gland {c |}{col 17}{res}{space 2} .0004871{col 29}{space 2} .0026675{col 40}{space 1}    0.18{col 49}{space 3}0.855{col 57}{space 4}-.0047419{col 70}{space 3} .0057161
+{txt}{space 10}_cons {c |}{col 17}{res}{space 2} 7.103244{col 29}{space 2}  .046734{col 40}{space 1}  151.99{col 49}{space 3}0.000{col 57}{space 4} 7.011632{col 70}{space 3} 7.194856
+{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg log_income i.province ethnicity urban gender age married edu hhsize dep_ratio log_aland log_pland log_fland log_gland
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(25, 7391)     = {res}   272.93
+{txt}       Model {c |} {res} 2155.42716        25  86.2170862   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2334.76653     7,391  .315893185   {txt}R-squared       ={res}    0.4800
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.4783
+{txt}       Total {c |} {res} 4490.19368     7,416  .605473798   {txt}Root MSE        =   {res} .56204
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       log_income{col 19}{c |} Coefficient{col 31}  Std. err.{col 43}      t{col 51}   P>|t|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}province {c |}
+{space 3}Tỉnh Cao Bằng  {c |}{col 19}{res}{space 2}-.2040218{col 31}{space 2} .0411011{col 42}{space 1}   -4.96{col 51}{space 3}0.000{col 59}{space 4}-.2845916{col 72}{space 3}-.1234519
+{txt}{space 4}Tỉnh Bắc Kạn  {c |}{col 19}{res}{space 2}-.1409443{col 31}{space 2} .0396101{col 42}{space 1}   -3.56{col 51}{space 3}0.000{col 59}{space 4}-.2185914{col 72}{space 3}-.0632971
+{txt}Tỉnh Tuyên Quang  {c |}{col 19}{res}{space 2} .0641294{col 31}{space 2} .0385137{col 42}{space 1}    1.67{col 51}{space 3}0.096{col 59}{space 4}-.0113684{col 72}{space 3} .1396272
+{txt}{space 4}Tỉnh Lào Cai  {c |}{col 19}{res}{space 2} .0685877{col 31}{space 2} .0404713{col 42}{space 1}    1.69{col 51}{space 3}0.090{col 59}{space 4}-.0107475{col 72}{space 3}  .147923
+{txt}{space 2}Tỉnh Điện Biên  {c |}{col 19}{res}{space 2}-.1582368{col 31}{space 2} .0427586{col 42}{space 1}   -3.70{col 51}{space 3}0.000{col 59}{space 4}-.2420559{col 72}{space 3}-.0744177
+{txt}{space 3}Tỉnh Lai Châu  {c |}{col 19}{res}{space 2}-.0257858{col 31}{space 2} .0424479{col 42}{space 1}   -0.61{col 51}{space 3}0.544{col 59}{space 4}-.1089958{col 72}{space 3} .0574241
+{txt}{space 5}Tỉnh Sơn La  {c |}{col 19}{res}{space 2}-.1910236{col 31}{space 2} .0388976{col 42}{space 1}   -4.91{col 51}{space 3}0.000{col 59}{space 4}-.2672741{col 72}{space 3}-.1147732
+{txt}{space 4}Tỉnh Yên Bái  {c |}{col 19}{res}{space 2}-.0588109{col 31}{space 2} .0390329{col 42}{space 1}   -1.51{col 51}{space 3}0.132{col 59}{space 4}-.1353264{col 72}{space 3} .0177046
+{txt}{space 3}Tỉnh Hoà Bình  {c |}{col 19}{res}{space 2} .0148491{col 31}{space 2} .0381797{col 42}{space 1}    0.39{col 51}{space 3}0.697{col 59}{space 4} -.059994{col 72}{space 3} .0896921
+{txt}Tỉnh Thái Nguyên  {c |}{col 19}{res}{space 2} .0286457{col 31}{space 2} .0376311{col 42}{space 1}    0.76{col 51}{space 3}0.447{col 59}{space 4}-.0451219{col 72}{space 3} .1024134
+{txt}{space 3}Tỉnh Lạng Sơn  {c |}{col 19}{res}{space 2}-.0556621{col 31}{space 2} .0385713{col 42}{space 1}   -1.44{col 51}{space 3}0.149{col 59}{space 4}-.1312729{col 72}{space 3} .0199486
+{txt}{space 2}Tỉnh Bắc Giang  {c |}{col 19}{res}{space 2} .2021771{col 31}{space 2} .0373744{col 42}{space 1}    5.41{col 51}{space 3}0.000{col 59}{space 4} .1289127{col 72}{space 3} .2754415
+{txt}{space 4}Tỉnh Phú Thọ  {c |}{col 19}{res}{space 2}-.0984688{col 31}{space 2} .0372485{col 42}{space 1}   -2.64{col 51}{space 3}0.008{col 59}{space 4}-.1714865{col 72}{space 3} -.025451
+{txt}{space 17} {c |}
+{space 8}ethnicity {c |}{col 19}{res}{space 2} .2964827{col 31}{space 2} .0184146{col 42}{space 1}   16.10{col 51}{space 3}0.000{col 59}{space 4} .2603848{col 72}{space 3} .3325807
+{txt}{space 12}urban {c |}{col 19}{res}{space 2} .2765191{col 31}{space 2} .0205541{col 42}{space 1}   13.45{col 51}{space 3}0.000{col 59}{space 4} .2362272{col 72}{space 3}  .316811
+{txt}{space 11}gender {c |}{col 19}{res}{space 2}-.0429977{col 31}{space 2} .0219822{col 42}{space 1}   -1.96{col 51}{space 3}0.050{col 59}{space 4}-.0860891{col 72}{space 3} .0000936
+{txt}{space 14}age {c |}{col 19}{res}{space 2} .0068945{col 31}{space 2} .0005593{col 42}{space 1}   12.33{col 51}{space 3}0.000{col 59}{space 4} .0057981{col 72}{space 3} .0079909
+{txt}{space 10}married {c |}{col 19}{res}{space 2}  .075437{col 31}{space 2} .0246853{col 42}{space 1}    3.06{col 51}{space 3}0.002{col 59}{space 4} .0270469{col 72}{space 3} .1238272
+{txt}{space 14}edu {c |}{col 19}{res}{space 2} .0589454{col 31}{space 2} .0019288{col 42}{space 1}   30.56{col 51}{space 3}0.000{col 59}{space 4} .0551644{col 72}{space 3} .0627264
+{txt}{space 11}hhsize {c |}{col 19}{res}{space 2}-.0597608{col 31}{space 2} .0046012{col 42}{space 1}  -12.99{col 51}{space 3}0.000{col 59}{space 4}-.0687806{col 72}{space 3}-.0507411
+{txt}{space 8}dep_ratio {c |}{col 19}{res}{space 2}-.5588769{col 31}{space 2} .0247424{col 42}{space 1}  -22.59{col 51}{space 3}0.000{col 59}{space 4}-.6073791{col 72}{space 3}-.5103747
+{txt}{space 8}log_aland {c |}{col 19}{res}{space 2} -.031252{col 31}{space 2} .0026827{col 42}{space 1}  -11.65{col 51}{space 3}0.000{col 59}{space 4}-.0365108{col 72}{space 3}-.0259931
+{txt}{space 8}log_pland {c |}{col 19}{res}{space 2} .0023883{col 31}{space 2} .0022329{col 42}{space 1}    1.07{col 51}{space 3}0.285{col 59}{space 4}-.0019887{col 72}{space 3} .0067654
+{txt}{space 8}log_fland {c |}{col 19}{res}{space 2} .0021722{col 31}{space 2} .0018953{col 42}{space 1}    1.15{col 51}{space 3}0.252{col 59}{space 4}-.0015432{col 72}{space 3} .0058876
+{txt}{space 8}log_gland {c |}{col 19}{res}{space 2} .0035462{col 31}{space 2} .0027688{col 42}{space 1}    1.28{col 51}{space 3}0.200{col 59}{space 4}-.0018814{col 72}{space 3} .0089738
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} 7.165053{col 31}{space 2} .0527917{col 42}{space 1}  135.72{col 51}{space 3}0.000{col 59}{space 4} 7.061567{col 72}{space 3}  7.26854
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg log_income province ethnicity urban gender age married edu hhsize dep_ratio log_aland log_pland log_fland log_gland, beta
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(13, 7403)     = {res}   489.56
+{txt}       Model {c |} {res} 2075.70991        13  159.669993   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2414.48378     7,403  .326149369   {txt}R-squared       ={res}    0.4623
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.4613
+{txt}       Total {c |} {res} 4490.19368     7,416  .605473798   {txt}Root MSE        =   {res} .57109
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  log_income{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 67}        Beta
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}province {c |}{col 14}{res}{space 2} .0040569{col 26}{space 2} .0010612{col 37}{space 1}    3.82{col 46}{space 3}0.000{col 67}{space 3} .0368531
+{txt}{space 3}ethnicity {c |}{col 14}{res}{space 2}  .361966{col 26}{space 2} .0170413{col 37}{space 1}   21.24{col 46}{space 3}0.000{col 67}{space 3} .2321974
+{txt}{space 7}urban {c |}{col 14}{res}{space 2} .2416663{col 26}{space 2} .0205326{col 37}{space 1}   11.77{col 46}{space 3}0.000{col 67}{space 3}  .130685
+{txt}{space 6}gender {c |}{col 14}{res}{space 2}-.0254533{col 26}{space 2} .0221184{col 37}{space 1}   -1.15{col 46}{space 3}0.250{col 67}{space 3}-.0132016
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .0067345{col 26}{space 2} .0005593{col 37}{space 1}   12.04{col 46}{space 3}0.000{col 67}{space 3} .1135529
+{txt}{space 5}married {c |}{col 14}{res}{space 2} .0659726{col 26}{space 2} .0250079{col 37}{space 1}    2.64{col 46}{space 3}0.008{col 67}{space 3} .0303035
+{txt}{space 9}edu {c |}{col 14}{res}{space 2} .0561575{col 26}{space 2} .0019386{col 37}{space 1}   28.97{col 46}{space 3}0.000{col 67}{space 3} .2819833
+{txt}{space 6}hhsize {c |}{col 14}{res}{space 2}-.0592282{col 26}{space 2} .0046506{col 37}{space 1}  -12.74{col 46}{space 3}0.000{col 67}{space 3}-.1197044
+{txt}{space 3}dep_ratio {c |}{col 14}{res}{space 2}-.5616252{col 26}{space 2} .0250676{col 37}{space 1}  -22.40{col 46}{space 3}0.000{col 67}{space 3}-.1996685
+{txt}{space 3}log_aland {c |}{col 14}{res}{space 2}-.0342871{col 26}{space 2} .0026759{col 37}{space 1}  -12.81{col 46}{space 3}0.000{col 67}{space 3}-.1574292
+{txt}{space 3}log_pland {c |}{col 14}{res}{space 2} .0021598{col 26}{space 2} .0021957{col 37}{space 1}    0.98{col 46}{space 3}0.325{col 67}{space 3}  .008598
+{txt}{space 3}log_fland {c |}{col 14}{res}{space 2} .0030165{col 26}{space 2} .0017785{col 37}{space 1}    1.70{col 46}{space 3}0.090{col 67}{space 3} .0161234
+{txt}{space 3}log_gland {c |}{col 14}{res}{space 2} .0011293{col 26}{space 2} .0026844{col 37}{space 1}    0.42{col 46}{space 3}0.674{col 67}{space 3} .0040209
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 7.101819{col 26}{space 2} .0470448{col 37}{space 1}  150.96{col 46}{space 3}0.000{col 67}{space 3}        .
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg log_income province gender age married edu ethnicity hhsize dep_ratio urban log_aland log_pland log_fland log_gland
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(13, 7403)     = {res}   489.56
+{txt}       Model {c |} {res} 2075.70991        13  159.669993   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2414.48378     7,403  .326149369   {txt}R-squared       ={res}    0.4623
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.4613
+{txt}       Total {c |} {res} 4490.19368     7,416  .605473798   {txt}Root MSE        =   {res} .57109
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  log_income{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}province {c |}{col 14}{res}{space 2} .0040569{col 26}{space 2} .0010612{col 37}{space 1}    3.82{col 46}{space 3}0.000{col 54}{space 4} .0019767{col 67}{space 3} .0061371
+{txt}{space 6}gender {c |}{col 14}{res}{space 2}-.0254533{col 26}{space 2} .0221184{col 37}{space 1}   -1.15{col 46}{space 3}0.250{col 54}{space 4}-.0688116{col 67}{space 3}  .017905
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .0067345{col 26}{space 2} .0005593{col 37}{space 1}   12.04{col 46}{space 3}0.000{col 54}{space 4} .0056381{col 67}{space 3} .0078309
+{txt}{space 5}married {c |}{col 14}{res}{space 2} .0659726{col 26}{space 2} .0250079{col 37}{space 1}    2.64{col 46}{space 3}0.008{col 54}{space 4}   .01695{col 67}{space 3} .1149952
+{txt}{space 9}edu {c |}{col 14}{res}{space 2} .0561575{col 26}{space 2} .0019386{col 37}{space 1}   28.97{col 46}{space 3}0.000{col 54}{space 4} .0523573{col 67}{space 3} .0599577
+{txt}{space 3}ethnicity {c |}{col 14}{res}{space 2}  .361966{col 26}{space 2} .0170413{col 37}{space 1}   21.24{col 46}{space 3}0.000{col 54}{space 4} .3285602{col 67}{space 3} .3953718
+{txt}{space 6}hhsize {c |}{col 14}{res}{space 2}-.0592282{col 26}{space 2} .0046506{col 37}{space 1}  -12.74{col 46}{space 3}0.000{col 54}{space 4}-.0683448{col 67}{space 3}-.0501116
+{txt}{space 3}dep_ratio {c |}{col 14}{res}{space 2}-.5616252{col 26}{space 2} .0250676{col 37}{space 1}  -22.40{col 46}{space 3}0.000{col 54}{space 4}-.6107648{col 67}{space 3}-.5124856
+{txt}{space 7}urban {c |}{col 14}{res}{space 2} .2416663{col 26}{space 2} .0205326{col 37}{space 1}   11.77{col 46}{space 3}0.000{col 54}{space 4} .2014165{col 67}{space 3}  .281916
+{txt}{space 3}log_aland {c |}{col 14}{res}{space 2}-.0342871{col 26}{space 2} .0026759{col 37}{space 1}  -12.81{col 46}{space 3}0.000{col 54}{space 4}-.0395326{col 67}{space 3}-.0290416
+{txt}{space 3}log_pland {c |}{col 14}{res}{space 2} .0021598{col 26}{space 2} .0021957{col 37}{space 1}    0.98{col 46}{space 3}0.325{col 54}{space 4}-.0021443{col 67}{space 3}  .006464
+{txt}{space 3}log_fland {c |}{col 14}{res}{space 2} .0030165{col 26}{space 2} .0017785{col 37}{space 1}    1.70{col 46}{space 3}0.090{col 54}{space 4}-.0004698{col 67}{space 3} .0065028
+{txt}{space 3}log_gland {c |}{col 14}{res}{space 2} .0011293{col 26}{space 2} .0026844{col 37}{space 1}    0.42{col 46}{space 3}0.674{col 54}{space 4} -.004133{col 67}{space 3} .0063915
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 7.101819{col 26}{space 2} .0470448{col 37}{space 1}  150.96{col 46}{space 3}0.000{col 54}{space 4} 7.009598{col 67}{space 3}  7.19404
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. display invttail(7403, 0.05)
+{res}1.6450595
+
+{com}. display invttail(7403, 0.07)
+{res}1.4759494
+
+{com}. gen age2 = age*age
+
+. reg age age2
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(1, 7415)      > {res} 99999.00
+{txt}       Model {c |} {res} 1241615.38         1  1241615.38   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 34985.4596     7,415  4.71820088   {txt}R-squared       ={res}    0.9726
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.9726
+{txt}       Total {c |} {res} 1276600.84     7,416  172.141429   {txt}Root MSE        =   {res} 2.1721
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         age{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}age2 {c |}{col 14}{res}{space 2} .0095096{col 26}{space 2} .0000185{col 37}{space 1}  512.99{col 46}{space 3}0.000{col 54}{space 4} .0094733{col 67}{space 3} .0095459
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 24.48668{col 26}{space 2} .0530073{col 37}{space 1}  461.95{col 46}{space 3}0.000{col 54}{space 4} 24.38277{col 67}{space 3} 24.59059
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. utest age age2
+{err}age not found
+{txt}{search r(111), local:r(111);}
+
+{com}. reg log_income age age2
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(2, 7414)      = {res}   269.39
+{txt}       Model {c |} {res} 304.195226         2  152.097613   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 4185.99846     7,414  .564607291   {txt}R-squared       ={res}    0.0677
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0675
+{txt}       Total {c |} {res} 4490.19368     7,416  .605473798   {txt}Root MSE        =   {res}  .7514
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  log_income{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}age {c |}{col 14}{res}{space 2} .0747369{col 26}{space 2} .0040173{col 37}{space 1}   18.60{col 46}{space 3}0.000{col 54}{space 4} .0668619{col 67}{space 3} .0826118
+{txt}{space 8}age2 {c |}{col 14}{res}{space 2}-.0006217{col 26}{space 2} .0000387{col 37}{space 1}  -16.05{col 46}{space 3}0.000{col 54}{space 4}-.0006976{col 67}{space 3}-.0005458
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.566183{col 26}{space 2} .1000637{col 37}{space 1}   55.63{col 46}{space 3}0.000{col 54}{space 4}  5.37003{col 67}{space 3} 5.762336
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. utest age age2
+
+{txt}Specification: f(x)=x^2
+Extreme point: {res} 60.10623
+
+{txt}Test:
+     H1: Inverse U shape
+ vs. H0: Monotone or U shape 
+
+{hline 17}{c TT}{hline 31}
+                 {c |}   Lower bound      Upper bound
+{hline 17}{c +}{hline 31}
+Interval         {c |}   {res}       18               99
+{txt}Slope            {c |}   {res} .0523554         -.048361
+{txt}t-value          {c |}   {res} 19.74162        -12.83719
+{txt}P>|t|            {c |}   {res} 6.85e-85         1.26e-37
+{txt}{hline 17}{c BT}{hline 31}
+
+Overall test of presence of a Inverse U shape:
+     t-value = {res}    12.84
+{txt}     P>|t|   = {res} 1.26e-37
+
+{com}. reg log_income c.age##c.age
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(2, 7414)      = {res}   269.39
+{txt}       Model {c |} {res} 304.195226         2  152.097613   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 4185.99846     7,414  .564607291   {txt}R-squared       ={res}    0.0677
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0675
+{txt}       Total {c |} {res} 4490.19368     7,416  .605473798   {txt}Root MSE        =   {res}  .7514
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  log_income{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}age {c |}{col 14}{res}{space 2} .0747369{col 26}{space 2} .0040173{col 37}{space 1}   18.60{col 46}{space 3}0.000{col 54}{space 4} .0668619{col 67}{space 3} .0826118
+{txt}{space 12} {c |}
+{space 1}c.age#c.age {c |}{col 14}{res}{space 2}-.0006217{col 26}{space 2} .0000387{col 37}{space 1}  -16.05{col 46}{space 3}0.000{col 54}{space 4}-.0006976{col 67}{space 3}-.0005458
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2} 5.566183{col 26}{space 2} .1000637{col 37}{space 1}   55.63{col 46}{space 3}0.000{col 54}{space 4}  5.37003{col 67}{space 3} 5.762336
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. margins, at(age=(18(2)99))
+{res}
+{txt}Adjusted predictions{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:7,417}
+{txt}{col 1}Model VCE: {res:OLS}
+
+{txt}{p2colset 1 13 13 2}{...}
+{p2col:Expression:}{res:Linear prediction, predict()}{p_end}
+{p2colreset}{...}
+{lalign 8:1._at: }{space 0}{lalign 3:age} = {res:{ralign 2:18}}
+{lalign 8:2._at: }{space 0}{lalign 3:age} = {res:{ralign 2:20}}
+{lalign 8:3._at: }{space 0}{lalign 3:age} = {res:{ralign 2:22}}
+{lalign 8:4._at: }{space 0}{lalign 3:age} = {res:{ralign 2:24}}
+{lalign 8:5._at: }{space 0}{lalign 3:age} = {res:{ralign 2:26}}
+{lalign 8:6._at: }{space 0}{lalign 3:age} = {res:{ralign 2:28}}
+{lalign 8:7._at: }{space 0}{lalign 3:age} = {res:{ralign 2:30}}
+{lalign 8:8._at: }{space 0}{lalign 3:age} = {res:{ralign 2:32}}
+{lalign 8:9._at: }{space 0}{lalign 3:age} = {res:{ralign 2:34}}
+{lalign 8:10._at: }{space 0}{lalign 3:age} = {res:{ralign 2:36}}
+{lalign 8:11._at: }{space 0}{lalign 3:age} = {res:{ralign 2:38}}
+{lalign 8:12._at: }{space 0}{lalign 3:age} = {res:{ralign 2:40}}
+{lalign 8:13._at: }{space 0}{lalign 3:age} = {res:{ralign 2:42}}
+{lalign 8:14._at: }{space 0}{lalign 3:age} = {res:{ralign 2:44}}
+{lalign 8:15._at: }{space 0}{lalign 3:age} = {res:{ralign 2:46}}
+{lalign 8:16._at: }{space 0}{lalign 3:age} = {res:{ralign 2:48}}
+{lalign 8:17._at: }{space 0}{lalign 3:age} = {res:{ralign 2:50}}
+{lalign 8:18._at: }{space 0}{lalign 3:age} = {res:{ralign 2:52}}
+{lalign 8:19._at: }{space 0}{lalign 3:age} = {res:{ralign 2:54}}
+{lalign 8:20._at: }{space 0}{lalign 3:age} = {res:{ralign 2:56}}
+{lalign 8:21._at: }{space 0}{lalign 3:age} = {res:{ralign 2:58}}
+{lalign 8:22._at: }{space 0}{lalign 3:age} = {res:{ralign 2:60}}
+{lalign 8:23._at: }{space 0}{lalign 3:age} = {res:{ralign 2:62}}
+{lalign 8:24._at: }{space 0}{lalign 3:age} = {res:{ralign 2:64}}
+{lalign 8:25._at: }{space 0}{lalign 3:age} = {res:{ralign 2:66}}
+{lalign 8:26._at: }{space 0}{lalign 3:age} = {res:{ralign 2:68}}
+{lalign 8:27._at: }{space 0}{lalign 3:age} = {res:{ralign 2:70}}
+{lalign 8:28._at: }{space 0}{lalign 3:age} = {res:{ralign 2:72}}
+{lalign 8:29._at: }{space 0}{lalign 3:age} = {res:{ralign 2:74}}
+{lalign 8:30._at: }{space 0}{lalign 3:age} = {res:{ralign 2:76}}
+{lalign 8:31._at: }{space 0}{lalign 3:age} = {res:{ralign 2:78}}
+{lalign 8:32._at: }{space 0}{lalign 3:age} = {res:{ralign 2:80}}
+{lalign 8:33._at: }{space 0}{lalign 3:age} = {res:{ralign 2:82}}
+{lalign 8:34._at: }{space 0}{lalign 3:age} = {res:{ralign 2:84}}
+{lalign 8:35._at: }{space 0}{lalign 3:age} = {res:{ralign 2:86}}
+{lalign 8:36._at: }{space 0}{lalign 3:age} = {res:{ralign 2:88}}
+{lalign 8:37._at: }{space 0}{lalign 3:age} = {res:{ralign 2:90}}
+{lalign 8:38._at: }{space 0}{lalign 3:age} = {res:{ralign 2:92}}
+{lalign 8:39._at: }{space 0}{lalign 3:age} = {res:{ralign 2:94}}
+{lalign 8:40._at: }{space 0}{lalign 3:age} = {res:{ralign 2:96}}
+{lalign 8:41._at: }{space 0}{lalign 3:age} = {res:{ralign 2:98}}
+
+{res}{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26} Delta-method
+{col 14}{c |}     Margin{col 26}   std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}_at {c |}
+{space 10}1  {c |}{col 14}{res}{space 2} 6.710014{col 26}{space 2} .0418435{col 37}{space 1}  160.36{col 46}{space 3}0.000{col 54}{space 4} 6.627989{col 67}{space 3} 6.792039
+{txt}{space 10}2  {c |}{col 14}{res}{space 2} 6.812238{col 26}{space 2} .0370041{col 37}{space 1}  184.09{col 46}{space 3}0.000{col 54}{space 4} 6.739699{col 67}{space 3} 6.884776
+{txt}{space 10}3  {c |}{col 14}{res}{space 2} 6.909488{col 26}{space 2} .0325091{col 37}{space 1}  212.54{col 46}{space 3}0.000{col 54}{space 4} 6.845761{col 67}{space 3} 6.973215
+{txt}{space 10}4  {c |}{col 14}{res}{space 2} 7.001765{col 26}{space 2}  .028369{col 37}{space 1}  246.81{col 46}{space 3}0.000{col 54}{space 4} 6.946154{col 67}{space 3} 7.057376
+{txt}{space 10}5  {c |}{col 14}{res}{space 2} 7.089068{col 26}{space 2} .0245984{col 37}{space 1}  288.19{col 46}{space 3}0.000{col 54}{space 4} 7.040848{col 67}{space 3} 7.137288
+{txt}{space 10}6  {c |}{col 14}{res}{space 2} 7.171397{col 26}{space 2} .0212167{col 37}{space 1}  338.01{col 46}{space 3}0.000{col 54}{space 4} 7.129807{col 67}{space 3} 7.212988
+{txt}{space 10}7  {c |}{col 14}{res}{space 2} 7.248753{col 26}{space 2} .0182496{col 37}{space 1}  397.20{col 46}{space 3}0.000{col 54}{space 4} 7.212979{col 67}{space 3} 7.284528
+{txt}{space 10}8  {c |}{col 14}{res}{space 2} 7.321135{col 26}{space 2}  .015729{col 37}{space 1}  465.45{col 46}{space 3}0.000{col 54}{space 4} 7.290302{col 67}{space 3} 7.351969
+{txt}{space 10}9  {c |}{col 14}{res}{space 2} 7.388544{col 26}{space 2} .0136898{col 37}{space 1}  539.71{col 46}{space 3}0.000{col 54}{space 4} 7.361708{col 67}{space 3}  7.41538
+{txt}{space 9}10  {c |}{col 14}{res}{space 2} 7.450979{col 26}{space 2} .0121593{col 37}{space 1}  612.78{col 46}{space 3}0.000{col 54}{space 4} 7.427143{col 67}{space 3} 7.474814
+{txt}{space 9}11  {c |}{col 14}{res}{space 2}  7.50844{col 26}{space 2} .0111384{col 37}{space 1}  674.11{col 46}{space 3}0.000{col 54}{space 4} 7.486605{col 67}{space 3} 7.530274
+{txt}{space 9}12  {c |}{col 14}{res}{space 2} 7.560927{col 26}{space 2} .0105823{col 37}{space 1}  714.49{col 46}{space 3}0.000{col 54}{space 4} 7.540183{col 67}{space 3} 7.581672
+{txt}{space 9}13  {c |}{col 14}{res}{space 2} 7.608441{col 26}{space 2} .0103979{col 37}{space 1}  731.73{col 46}{space 3}0.000{col 54}{space 4} 7.588058{col 67}{space 3} 7.628824
+{txt}{space 9}14  {c |}{col 14}{res}{space 2} 7.650981{col 26}{space 2} .0104658{col 37}{space 1}  731.04{col 46}{space 3}0.000{col 54}{space 4} 7.630465{col 67}{space 3} 7.671497
+{txt}{space 9}15  {c |}{col 14}{res}{space 2} 7.688548{col 26}{space 2} .0106722{col 37}{space 1}  720.43{col 46}{space 3}0.000{col 54}{space 4} 7.667627{col 67}{space 3} 7.709469
+{txt}{space 9}16  {c |}{col 14}{res}{space 2} 7.721141{col 26}{space 2} .0109286{col 37}{space 1}  706.51{col 46}{space 3}0.000{col 54}{space 4} 7.699718{col 67}{space 3} 7.742564
+{txt}{space 9}17  {c |}{col 14}{res}{space 2}  7.74876{col 26}{space 2} .0111783{col 37}{space 1}  693.19{col 46}{space 3}0.000{col 54}{space 4} 7.726847{col 67}{space 3} 7.770673
+{txt}{space 9}18  {c |}{col 14}{res}{space 2} 7.771406{col 26}{space 2} .0113949{col 37}{space 1}  682.01{col 46}{space 3}0.000{col 54}{space 4} 7.749068{col 67}{space 3} 7.793743
+{txt}{space 9}19  {c |}{col 14}{res}{space 2} 7.789078{col 26}{space 2} .0115785{col 37}{space 1}  672.72{col 46}{space 3}0.000{col 54}{space 4} 7.766381{col 67}{space 3} 7.811775
+{txt}{space 9}20  {c |}{col 14}{res}{space 2} 7.801776{col 26}{space 2} .0117534{col 37}{space 1}  663.79{col 46}{space 3}0.000{col 54}{space 4} 7.778736{col 67}{space 3} 7.824816
+{txt}{space 9}21  {c |}{col 14}{res}{space 2} 7.809501{col 26}{space 2} .0119666{col 37}{space 1}  652.61{col 46}{space 3}0.000{col 54}{space 4} 7.786043{col 67}{space 3} 7.832959
+{txt}{space 9}22  {c |}{col 14}{res}{space 2} 7.812252{col 26}{space 2} .0122852{col 37}{space 1}  635.91{col 46}{space 3}0.000{col 54}{space 4} 7.788169{col 67}{space 3} 7.836334
+{txt}{space 9}23  {c |}{col 14}{res}{space 2} 7.810029{col 26}{space 2} .0127899{col 37}{space 1}  610.64{col 46}{space 3}0.000{col 54}{space 4} 7.784957{col 67}{space 3} 7.835101
+{txt}{space 9}24  {c |}{col 14}{res}{space 2} 7.802833{col 26}{space 2} .0135651{col 37}{space 1}  575.22{col 46}{space 3}0.000{col 54}{space 4} 7.776241{col 67}{space 3} 7.829424
+{txt}{space 9}25  {c |}{col 14}{res}{space 2} 7.790663{col 26}{space 2} .0146844{col 37}{space 1}  530.54{col 46}{space 3}0.000{col 54}{space 4} 7.761877{col 67}{space 3} 7.819448
+{txt}{space 9}26  {c |}{col 14}{res}{space 2} 7.773519{col 26}{space 2} .0161999{col 37}{space 1}  479.85{col 46}{space 3}0.000{col 54}{space 4} 7.741763{col 67}{space 3} 7.805275
+{txt}{space 9}27  {c |}{col 14}{res}{space 2} 7.751402{col 26}{space 2} .0181382{col 37}{space 1}  427.35{col 46}{space 3}0.000{col 54}{space 4} 7.715846{col 67}{space 3} 7.786958
+{txt}{space 9}28  {c |}{col 14}{res}{space 2} 7.724311{col 26}{space 2}  .020505{col 37}{space 1}  376.70{col 46}{space 3}0.000{col 54}{space 4} 7.684115{col 67}{space 3} 7.764506
+{txt}{space 9}29  {c |}{col 14}{res}{space 2} 7.692246{col 26}{space 2} .0232924{col 37}{space 1}  330.25{col 46}{space 3}0.000{col 54}{space 4} 7.646587{col 67}{space 3} 7.737906
+{txt}{space 9}30  {c |}{col 14}{res}{space 2} 7.655208{col 26}{space 2} .0264867{col 37}{space 1}  289.02{col 46}{space 3}0.000{col 54}{space 4} 7.603287{col 67}{space 3} 7.707129
+{txt}{space 9}31  {c |}{col 14}{res}{space 2} 7.613196{col 26}{space 2} .0300723{col 37}{space 1}  253.16{col 46}{space 3}0.000{col 54}{space 4} 7.554246{col 67}{space 3} 7.672147
+{txt}{space 9}32  {c |}{col 14}{res}{space 2} 7.566211{col 26}{space 2} .0340352{col 37}{space 1}  222.31{col 46}{space 3}0.000{col 54}{space 4} 7.499492{col 67}{space 3} 7.632929
+{txt}{space 9}33  {c |}{col 14}{res}{space 2} 7.514252{col 26}{space 2}  .038363{col 37}{space 1}  195.87{col 46}{space 3}0.000{col 54}{space 4} 7.439049{col 67}{space 3} 7.589454
+{txt}{space 9}34  {c |}{col 14}{res}{space 2} 7.457319{col 26}{space 2} .0430456{col 37}{space 1}  173.24{col 46}{space 3}0.000{col 54}{space 4} 7.372937{col 67}{space 3}   7.5417
+{txt}{space 9}35  {c |}{col 14}{res}{space 2} 7.395412{col 26}{space 2} .0480748{col 37}{space 1}  153.83{col 46}{space 3}0.000{col 54}{space 4} 7.301172{col 67}{space 3} 7.489653
+{txt}{space 9}36  {c |}{col 14}{res}{space 2} 7.328532{col 26}{space 2} .0534441{col 37}{space 1}  137.13{col 46}{space 3}0.000{col 54}{space 4} 7.223766{col 67}{space 3} 7.433298
+{txt}{space 9}37  {c |}{col 14}{res}{space 2} 7.256678{col 26}{space 2} .0591481{col 37}{space 1}  122.69{col 46}{space 3}0.000{col 54}{space 4} 7.140731{col 67}{space 3} 7.372625
+{txt}{space 9}38  {c |}{col 14}{res}{space 2} 7.179851{col 26}{space 2} .0651826{col 37}{space 1}  110.15{col 46}{space 3}0.000{col 54}{space 4} 7.052074{col 67}{space 3} 7.307627
+{txt}{space 9}39  {c |}{col 14}{res}{space 2}  7.09805{col 26}{space 2} .0715444{col 37}{space 1}   99.21{col 46}{space 3}0.000{col 54}{space 4} 6.957802{col 67}{space 3} 7.238297
+{txt}{space 9}40  {c |}{col 14}{res}{space 2} 7.011275{col 26}{space 2} .0782306{col 37}{space 1}   89.62{col 46}{space 3}0.000{col 54}{space 4} 6.857921{col 67}{space 3} 7.164629
+{txt}{space 9}41  {c |}{col 14}{res}{space 2} 6.919527{col 26}{space 2}  .085239{col 37}{space 1}   81.18{col 46}{space 3}0.000{col 54}{space 4} 6.752434{col 67}{space 3} 7.086619
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. marginsplot, title("Quadratic relationship between age and household income")
+{res}
+{text}{p 0 0 2}Variables that uniquely identify margins: {bf:age}{p_end}
+{res}
+{com}. graph save "Graph" "C:\Users\LOAN\Downloads\Econometrics\Final\Group 5\Quadratic relationship.gph"
+{res}{txt}file {bf:C:\Users\LOAN\Downloads\Econometrics\Final\Group 5\Quadratic relationship.gph} saved
+
+{com}. reg log_income age
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(1, 7415)      = {res}   271.78
+{txt}       Model {c |} {res} 158.761208         1  158.761208   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 4331.43248     7,415  .584144636   {txt}R-squared       ={res}    0.0354
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0352
+{txt}       Total {c |} {res} 4490.19368     7,416  .605473798   {txt}Root MSE        =   {res} .76429
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  log_income{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}age {c |}{col 14}{res}{space 2} .0111518{col 26}{space 2} .0006764{col 37}{space 1}   16.49{col 46}{space 3}0.000{col 54}{space 4} .0098258{col 67}{space 3} .0124778
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}  7.08032{col 26}{space 2} .0339235{col 37}{space 1}  208.71{col 46}{space 3}0.000{col 54}{space 4}  7.01382{col 67}{space 3}  7.14682
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. outreg2 using age.doc
+{txt}{stata `"shellout using `"age.doc"'"':age.doc}
+{browse `"C:\Users\LOAN\OneDrive\Documents"' :dir}{com} : {txt}{stata `"seeout using "age.txt""':seeout}
+
+{com}. reg log_income age age2
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     7,417
+{txt}{hline 13}{c +}{hline 34}   F(2, 7414)      = {res}   269.39
+{txt}       Model {c |} {res} 304.195226         2  152.097613   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 4185.99846     7,414  .564607291   {txt}R-squared       ={res}    0.0677
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0675
+{txt}       Total {c |} {res} 4490.19368     7,416  .605473798   {txt}Root MSE        =   {res}  .7514
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  log_income{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}age {c |}{col 14}{res}{space 2} .0747369{col 26}{space 2} .0040173{col 37}{space 1}   18.60{col 46}{space 3}0.000{col 54}{space 4} .0668619{col 67}{space 3} .0826118
+{txt}{space 8}age2 {c |}{col 14}{res}{space 2}-.0006217{col 26}{space 2} .0000387{col 37}{space 1}  -16.05{col 46}{space 3}0.000{col 54}{space 4}-.0006976{col 67}{space 3}-.0005458
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.566183{col 26}{space 2} .1000637{col 37}{space 1}   55.63{col 46}{space 3}0.000{col 54}{space 4}  5.37003{col 67}{space 3} 5.762336
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. outreg2 using age.doc,append
+{txt}{stata `"shellout using `"age.doc"'"':age.doc}
+{browse `"C:\Users\LOAN\OneDrive\Documents"' :dir}{com} : {txt}{stata `"seeout using "age.txt""':seeout}
+
+{com}. outreg2 using results.doc, append ctitle("With age2") se
+{txt}{stata `"shellout using `"results.doc"'"':results.doc}
+{browse `"C:\Users\LOAN\OneDrive\Documents"' :dir}{com} : {txt}{stata `"seeout using "results.txt""':seeout}
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\LOAN\Downloads\Econometrics\Final\Group 1\Group 1.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}25 Dec 2024, 00:47:01
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
