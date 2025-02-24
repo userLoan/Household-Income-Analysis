@@ -53,7 +53,24 @@ The new model does not violate the assumption of heteroscedasticity, indicating 
 The plot shows that the model satisfies the above assumption.  
 
 ## Key Findings
+1. The proportional income differences among groups: Kinh households in urban areas earn the most, with income levels 55% higher than  ethnic minority households in rural areas. These results underline how both ethnicity and location together affect income, suggesting that specific policies are needed to reduce these income differences. 
+2. Compare income differences between provinces: The results show a clear differentiation in household Income in the Northern Midlands and Mountains in Vietnam. This may reflect the disparity in economic development and living conditions between regions.
 
+Controlling for other factors, there are differences in income when comparing households living in Ha Giang (base group) with households living in other provinces.
 
+- Higher than Ha Giang: Tuyen Quang (6.41%), Lao Cai (6.86%), Bac Giang (20.2%)
+- Lower than Ha Giang: Cao Bang (20.4%), Bac Kan (14.09%), Dien Bien (15.82%), Son La (19.1%), Phu Tho (9.85%)
+
+3. Different types of land (annual cropland, perennial cropland, forestland, garden land) affect household income
+- Annual cropland: A 1% increase reduces income by 3.43%.
+- Perennial cropland: A 1% increase raises income by 0.2%.
+- Forestland: A 1% increase decreases income by 0.3%.
+- Garden land: A 1% increase raises income by 0.01%.
+
+4. The relative influence of each independent variable on income: Education and ethnicity are the primary drivers of income, while higher dependency ratios reduce earnings potential.
+
+5. The effect of education on income: Education increases income by more than 5%.
+
+6. Analyze the quadratic relationship between age and income: Income increases with age, peaking at 60 years, then declines.
 
 
