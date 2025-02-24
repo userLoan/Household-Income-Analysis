@@ -73,4 +73,4 @@ Controlling for other factors, there are differences in income when comparing ho
 
 6. Analyze the quadratic relationship between age and income: Income increases with age, peaking at 60 years, then declines.
 
-
+THE END.
